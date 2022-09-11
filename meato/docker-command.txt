@@ -1,0 +1,4 @@
+echo("Creating or building docker image")
+docker build --tag meato
+echo("publishing a docker container")
+docker run --publish 8000:8000 meato
